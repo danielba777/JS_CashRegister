@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
+    />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header">
-      <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamp logo">
-    </header>
     <main>
-      <h1 class="heading">Cash Register Project</h1>
-      <label class="cash-input-label" for="cash">Enter cash from customer:</label>
-      <br>
-      <input id="cash" type="number"></input>
-      <br>
-      <button id="purchase-btn" class="purchase-btn">Purchase</button>
-      <div id="change-due">
+      <img
+        class="freecodecamp-logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp Logo"
+      />
+      <h1>Cash Register Project</h1>
+      <div id="change-due"></div>
+      <div class="input-div">
+        <label for="cash">Enter cash from customer:</label>
+        <input type="number" id="cash" class="user-input" value="" />
+        <button class="check-btn-styles" id="purchase-btn">Purchase</button>
       </div>
-      <div class="cash-register">
-        <div id="cash-register-display" class="cash-register-display">  
+      <div class="container">
+        <div class="top-display-screen-container">
+          <p id="price-screen" class="price-screen"></p>
+          <div class="connector"></div>
         </div>
-        <div class="cash-register-holder">
-        </div>
-        <div class="cash-register-body">
+        <div class="top-register">
           <div class="btns-container">
-            <button class="deco-btn">1</button>
-            <button class="deco-btn">2</button>
-            <button class="deco-btn">3</button>
-            <button class="deco-btn">4</button>
-            <button class="deco-btn">5</button>
-            <button class="deco-btn">6</button>
-            <button class="deco-btn">7</button>
-            <button class="deco-btn">8</button>
-            <button class="deco-btn">9</button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
           </div>
-          <div id="change-drawer">
-          </div>
+          <div id="cash-drawer-display" class="cash-drawer-display"></div>
         </div>
-        <div class="cash-register-bottom">
-          <div class="cash-register-bottom-circle">
-          </div>
+        <div class="bottom-register">
+          <div class="circle"></div>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
